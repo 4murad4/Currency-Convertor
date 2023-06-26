@@ -198,208 +198,208 @@ button.addEventListener('click', () => {
     let amount = document.querySelector('input');
     let firstSelect = document.getElementById('mon1').value;
     let secondSelect = document.getElementById('mon2').value;
-    let money = amount.value;
+    let amountValue = amount.value;
     let result,convertedMoney;
 
     if (firstSelect == '1') {
         if (secondSelect == '9') {
-            result = `${money} USD = ${money} USD`;
+            result = `${amountValue} USD = ${amountValue} USD`;
         } else if (secondSelect == '10') {
-            convertedMoney = moneyConvertion.fromDollar.toEuro(money);
-            result = `${money} USD = ${convertedMoney} EUR`;
+            convertedMoney = moneyConvertion.fromDollar.toEuro(amountValue);
+            result = `${amountValue} USD = ${convertedMoney} EUR`;
         } else if (secondSelect == '11') {
-            convertedMoney = moneyConvertion.fromDollar.toYen(money);
-            result = `${money} USD = ${convertedMoney} JPY`;
+            convertedMoney = moneyConvertion.fromDollar.toYen(amountValue);
+            result = `${amountValue} USD = ${convertedMoney} JPY`;
         } else if (secondSelect == '12') {
-            convertedMoney = moneyConvertion.fromDollar.toRupee(money);
-            result = `${money} USD = ${convertedMoney} INR`;
+            convertedMoney = moneyConvertion.fromDollar.toRupee(amountValue);
+            result = `${amountValue} USD = ${convertedMoney} INR`;
         } else if (secondSelect == '13') {
-            convertedMoney = moneyConvertion.fromDollar.toRuble(money);
-            result = `${money} USD = ${convertedMoney} RUB`;
+            convertedMoney = moneyConvertion.fromDollar.toRuble(amountValue);
+            result = `${amountValue} USD = ${convertedMoney} RUB`;
         } else if (secondSelect == '14') {
-            convertedMoney = moneyConvertion.fromDollar.toPeso(money);
-            result = `${money} USD = ${convertedMoney} ARS`;
+            convertedMoney = moneyConvertion.fromDollar.toPeso(amountValue);
+            result = `${amountValue} USD = ${convertedMoney} ARS`;
         } else if (secondSelect == '15') {
-            convertedMoney = moneyConvertion.fromDollar.toLire(money);
-            result = `${money} USD = ${convertedMoney} TRY`;
+            convertedMoney = moneyConvertion.fromDollar.toLire(amountValue);
+            result = `${amountValue} USD = ${convertedMoney} TRY`;
         } else {
-            convertedMoney = moneyConvertion.fromDollar.toManat(money);
-            result = `${money} USD = ${convertedMoney} AZN`;
+            convertedMoney = moneyConvertion.fromDollar.toManat(amountValue);
+            result = `${amountValue} USD = ${convertedMoney} AZN`;
         }
     } else if (firstSelect == '2') {
         if (secondSelect == '9') {
-            convertedMoney = moneyConvertion.fromEuro.toDollar(money);
-            result = `${money} EUR = ${convertedMoney} USD`;
+            convertedMoney = moneyConvertion.fromEuro.toDollar(amountValue);
+            result = `${amountValue} EUR = ${convertedMoney} USD`;
         } else if (secondSelect == '10') {
-            result = `${money} EUR = ${money} EUR`;
+            result = `${amountValue} EUR = ${amountValue} EUR`;
         } else if (secondSelect == '11') {
-            convertedMoney = moneyConvertion.fromEuro.toYen(money);
-            result = `${money} EUR = ${convertedMoney} JPY`;
+            convertedMoney = moneyConvertion.fromEuro.toYen(amountValue);
+            result = `${amountValue} EUR = ${convertedMoney} JPY`;
         } else if (secondSelect == '12') {
-            convertedMoney = moneyConvertion.fromEuro.toRupee(money);
-            result = `${money} EUR = ${convertedMoney} INR`;
+            convertedMoney = moneyConvertion.fromEuro.toRupee(amountValue);
+            result = `${amountValue} EUR = ${convertedMoney} INR`;
         } else if (secondSelect == '13') {
-            convertedMoney = moneyConvertion.fromEuro.toRuble(money);
-            result = `${money} EUR = ${convertedMoney} RUB`;
+            convertedMoney = moneyConvertion.fromEuro.toRuble(amountValue);
+            result = `${amountValue} EUR = ${convertedMoney} RUB`;
         } else if (secondSelect == '14') {
-            convertedMoney = moneyConvertion.fromEuro.toPeso(money);
-            result = `${money} EUR = ${convertedMoney} ARS`;
+            convertedMoney = moneyConvertion.fromEuro.toPeso(amountValue);
+            result = `${amountValue} EUR = ${convertedMoney} ARS`;
         } else if (secondSelect == '15') {
-            convertedMoney = moneyConvertion.fromEuro.toLire(money);
-            result = `${money} EUR = ${convertedMoney} TRY`;
+            convertedMoney = moneyConvertion.fromEuro.toLire(amountValue);
+            result = `${amountValue} EUR = ${convertedMoney} TRY`;
         } else {
-            convertedMoney = moneyConvertion.fromEuro.toManat(money);
-            result = `${money} EUR = ${convertedMoney} AZN`;
+            convertedMoney = moneyConvertion.fromEuro.toManat(amountValue);
+            result = `${amountValue} EUR = ${convertedMoney} AZN`;
         }
     } else if (firstSelect == '3') {
         if (secondSelect == '9') {
-            convertedMoney = moneyConvertion.fromYen.toDollar(money);
-            result = `${money} YEN = ${convertedMoney} USD`;
+            convertedMoney = moneyConvertion.fromYen.toDollar(amountValue);
+            result = `${amountValue} YEN = ${convertedMoney} USD`;
         } else if (secondSelect == '10') {
-            convertedMoney = moneyConvertion.fromYen.toEuro(money);
-            result = `${money} YEN = ${convertedMoney} EUR`;
+            convertedMoney = moneyConvertion.fromYen.toEuro(amountValue);
+            result = `${amountValue} YEN = ${convertedMoney} EUR`;
         } else if (secondSelect == '11') {
-            result = `${money} YEN = ${money} YEN`;
+            result = `${amountValue} YEN = ${amountValue} YEN`;
         } else if (secondSelect == '12') {
-            convertedMoney = moneyConvertion.fromYen.toRupee(money);
-            result = `${money} YEN = ${convertedMoney} INR`;
+            convertedMoney = moneyConvertion.fromYen.toRupee(amountValue);
+            result = `${amountValue} YEN = ${convertedMoney} INR`;
         } else if (secondSelect == '13') {
-            convertedMoney = moneyConvertion.fromYen.toRuble(money);
-            result = `${money} YEN = ${convertedMoney} RUB`;
+            convertedMoney = moneyConvertion.fromYen.toRuble(amountValue);
+            result = `${amountValue} YEN = ${convertedMoney} RUB`;
         } else if (secondSelect == '14') {
-            convertedMoney = moneyConvertion.fromYen.toPeso(money);
-            result = `${money} YEN = ${convertedMoney} ARS`;
+            convertedMoney = moneyConvertion.fromYen.toPeso(amountValue);
+            result = `${amountValue} YEN = ${convertedMoney} ARS`;
         } else if (secondSelect == '15') {
-            convertedMoney = moneyConvertion.fromYen.toLire(money);
-            result = `${money} YEN = ${convertedMoney} TRY`;
+            convertedMoney = moneyConvertion.fromYen.toLire(amountValue);
+            result = `${amountValue} YEN = ${convertedMoney} TRY`;
         } else {
-            convertedMoney = moneyConvertion.fromYen.toManat(money);
-            result = `${money} YEN = ${convertedMoney} AZN`;
+            convertedMoney = moneyConvertion.fromYen.toManat(amountValue);
+            result = `${amountValue} YEN = ${convertedMoney} AZN`;
         }
     } else if (firstSelect == '4') {
         if (secondSelect == '9') {
-            convertedMoney = moneyConvertion.fromRupee.toDollar(money);
-            result = `${money} INR = ${convertedMoney} USD`;
+            convertedMoney = moneyConvertion.fromRupee.toDollar(amountValue);
+            result = `${amountValue} INR = ${convertedMoney} USD`;
         } else if (secondSelect == '10') {
-            convertedMoney = moneyConvertion.fromRupee.toEuro(money);
-            result = `${money} INR = ${convertedMoney} EUR`;
+            convertedMoney = moneyConvertion.fromRupee.toEuro(amountValue);
+            result = `${amountValue} INR = ${convertedMoney} EUR`;
         } else if (secondSelect == '11') {
-            convertedMoney = moneyConvertion.fromRupee.toYen(money);
-            result = `${money} INR = ${convertedMoney} YEN`;
+            convertedMoney = moneyConvertion.fromRupee.toYen(amountValue);
+            result = `${amountValue} INR = ${convertedMoney} YEN`;
         } else if (secondSelect == '12') {
-            result = `${money} INR = ${money} INR`;
+            result = `${amountValue} INR = ${amountValue} INR`;
         } else if (secondSelect == '13') {
-            convertedMoney = moneyConvertion.fromRupee.toRuble(money);
-            result = `${money} INR = ${convertedMoney} RUB`;
+            convertedMoney = moneyConvertion.fromRupee.toRuble(amountValue);
+            result = `${amountValue} INR = ${convertedMoney} RUB`;
         } else if (secondSelect == '14') {
             convertedMoney = moneyConvertion.fromRupee.toPeso(money);
             result = `${money} INR = ${convertedMoney} ARS`;
         } else if (secondSelect == '15') {
-            convertedMoney = moneyConvertion.fromRupee.toLire(money);
-            result = `${money} INR = ${convertedMoney} TRY`;
+            convertedMoney = moneyConvertion.fromRupee.toLire(amountValue);
+            result = `${amountValue} INR = ${convertedMoney} TRY`;
         } else {
-            convertedMoney = moneyConvertion.fromRupee.toManat(money);
-            result = `${money} INR = ${convertedMoney} AZN`;
+            convertedMoney = moneyConvertion.fromRupee.toManat(amountValue);
+            result = `${amountValue} INR = ${convertedMoney} AZN`;
         }
     } else if (firstSelect == '5') {
         if (secondSelect == '9') {
-            convertedMoney = moneyConvertion.fromRuble.toDollar(money);
-            result = `${money} RUB = ${convertedMoney} USD`;
+            convertedMoney = moneyConvertion.fromRuble.toDollar(amountValue);
+            result = `${amountValue} RUB = ${convertedMoney} USD`;
         } else if (secondSelect == '10') {
-            convertedMoney = moneyConvertion.fromRuble.toEuro(money);
-            result = `${money} RUB = ${convertedMoney} EUR`;
+            convertedMoney = moneyConvertion.fromRuble.toEuro(amountValue);
+            result = `${amountValue} RUB = ${convertedMoney} EUR`;
         } else if (secondSelect == '11') {
-            convertedMoney = moneyConvertion.fromRuble.toYen(money);
-            result = `${money} RUB = ${convertedMoney} YEN`;
+            convertedMoney = moneyConvertion.fromRuble.toYen(amountValue);
+            result = `${amountValue} RUB = ${convertedMoney} YEN`;
         } else if (secondSelect == '12') {
-            convertedMoney = moneyConvertion.fromRuble.toRupee(money);
-            result = `${money} RUB = ${convertedMoney} INR`;
+            convertedMoney = moneyConvertion.fromRuble.toRupee(amountValue);
+            result = `${amountValue} RUB = ${convertedMoney} INR`;
         } else if (secondSelect == '13') {
-            result = `${money} RUB = ${money} RUB`;
+            result = `${amountValue} RUB = ${amountValue} RUB`;
         } else if (secondSelect == '14') {
-            convertedMoney = moneyConvertion.fromRuble.toPeso(money);
-            result = `${money} RUB = ${convertedMoney} ARS`;
+            convertedMoney = moneyConvertion.fromRuble.toPeso(amountValue);
+            result = `${amountValue} RUB = ${convertedMoney} ARS`;
         } else if (secondSelect == '15') {
-            convertedMoney = moneyConvertion.fromRuble.toLire(money);
-            result = `${money} RUB = ${convertedMoney} TRY`;
+            convertedMoney = moneyConvertion.fromRuble.toLire(amountValue);
+            result = `${amountValue} RUB = ${convertedMoney} TRY`;
         } else {
-            convertedMoney = moneyConvertion.fromRuble.toManat(money);
-            result = `${money} RUB = ${convertedMoney} AZN`;
+            convertedMoney = moneyConvertion.fromRuble.toManat(amountValue);
+            result = `${amountValue} RUB = ${convertedMoney} AZN`;
         }
     } else if (firstSelect == '6') {
         if (secondSelect == '9') {
-            convertedMoney = moneyConvertion.fromPeso.toDollar(money);
-            result = `${money} ARS = ${convertedMoney} USD`;
+            convertedMoney = moneyConvertion.fromPeso.toDollar(amountValue);
+            result = `${amountValue} ARS = ${convertedMoney} USD`;
         } else if (secondSelect == '10') {
-            convertedMoney = moneyConvertion.fromPeso.toEuro(money);
-            result = `${money} ARS = ${convertedMoney} EUR`;
+            convertedMoney = moneyConvertion.fromPeso.toEuro(amountValue);
+            result = `${amountValue} ARS = ${convertedMoney} EUR`;
         } else if (secondSelect == '11') {
-            convertedMoney = moneyConvertion.fromPeso.toYen(money);
-            result = `${money} ARS = ${convertedMoney} YEN`;
+            convertedMoney = moneyConvertion.fromPeso.toYen(amountValue);
+            result = `${amountValue} ARS = ${convertedMoney} YEN`;
         } else if (secondSelect == '12') {
-            convertedMoney = moneyConvertion.fromPeso.toRupee(money);
-            result = `${money} ARS = ${convertedMoney} INR`;
+            convertedMoney = moneyConvertion.fromPeso.toRupee(amountValue);
+            result = `${amountValue} ARS = ${convertedMoney} INR`;
         } else if (secondSelect == '13') {
-            convertedMoney = moneyConvertion.fromPeso.toRuble(money);
-            result = `${money} ARS = ${convertedMoney} RUB`;
+            convertedMoney = moneyConvertion.fromPeso.toRuble(amountValue);
+            result = `${amountValue} ARS = ${convertedMoney} RUB`;
         } else if (secondSelect == '14') {
-            result = `${money} ARS = ${money} ARS`;
+            result = `${amountValue} ARS = ${amountValue} ARS`;
         } else if (secondSelect == '15') {
-            convertedMoney = moneyConvertion.fromPeso.toLire(money);
-            result = `${money} ARS = ${convertedMoney} TRY`;
+            convertedMoney = moneyConvertion.fromPeso.toLire(amountValue);
+            result = `${amountValue} ARS = ${convertedMoney} TRY`;
         } else {
-            convertedMoney = moneyConvertion.fromPeso.toManat(money);
-            result = `${money} ARS = ${convertedMoney} AZN`;
+            convertedMoney = moneyConvertion.fromPeso.toManat(amountValue);
+            result = `${amountValue} ARS = ${convertedMoney} AZN`;
         }
     } else if (firstSelect == '7') {
         if (secondSelect == '9') {
-            convertedMoney = moneyConvertion.fromLire.toDollar(money);
-            result = `${money} TRY = ${convertedMoney} USD`;
+            convertedMoney = moneyConvertion.fromLire.toDollar(amountValue);
+            result = `${amountValue} TRY = ${convertedMoney} USD`;
         } else if (secondSelect == '10') {
-            convertedMoney = moneyConvertion.fromLire.toEuro(money);
-            result = `${money} TRY = ${convertedMoney} EUR`;
+            convertedMoney = moneyConvertion.fromLire.toEuro(amountValue);
+            result = `${amountValue} TRY = ${convertedMoney} EUR`;
         } else if (secondSelect == '11') {
-            convertedMoney = moneyConvertion.fromLire.toYen(money);
-            result = `${money} TRY = ${convertedMoney} YEN`;
+            convertedMoney = moneyConvertion.fromLire.toYen(amountValue);
+            result = `${amountValue} TRY = ${convertedMoney} YEN`;
         } else if (secondSelect == '12') {
-            convertedMoney = moneyConvertion.fromLire.toRupee(money);
-            result = `${money} TRY = ${convertedMoney} INR`;
+            convertedMoney = moneyConvertion.fromLire.toRupee(amountValue);
+            result = `${amountValue} TRY = ${convertedMoney} INR`;
         } else if (secondSelect == '13') {
-            convertedMoney = moneyConvertion.fromLire.toRuble(money);
-            result = `${money} TRY = ${convertedMoney} RUB`;
+            convertedMoney = moneyConvertion.fromLire.toRuble(amountValue);
+            result = `${amountValue} TRY = ${convertedMoney} RUB`;
         } else if (secondSelect == '14') {
-            convertedMoney = moneyConvertion.fromLire.toPeso(money);
-            result = `${money} TRY = ${convertedMoney} ARS`;
+            convertedMoney = moneyConvertion.fromLire.toPeso(amountValue);
+            result = `${amountValue} TRY = ${convertedMoney} ARS`;
         } else if (secondSelect == '15') {
-            result = `${money} TRY = ${money} TRY`;
+            result = `${amountValue} TRY = ${amountValue} TRY`;
         } else {
-            convertedMoney = moneyConvertion.fromLire.toManat(money);
-            result = `${money} TRY = ${convertedMoney} AZN`;
+            convertedMoney = moneyConvertion.fromLire.toManat(amountValue);
+            result = `${amountValue} TRY = ${convertedMoney} AZN`;
         }
     } else {
         if (secondSelect == '9') {
-            convertedMoney = moneyConvertion.fromManat.toDollar(money);
-            result = `${money} AZN = ${convertedMoney} USD`;
+            convertedMoney = moneyConvertion.fromManat.toDollar(amountValue);
+            result = `${amountValue} AZN = ${convertedMoney} USD`;
         } else if (secondSelect == '10') {
-            convertedMoney = moneyConvertion.fromManat.toEuro(money);
-            result = `${money} AZN = ${convertedMoney} EUR`;
+            convertedMoney = moneyConvertion.fromManat.toEuro(amountValue);
+            result = `${amountValue} AZN = ${convertedMoney} EUR`;
         } else if (secondSelect == '11') {
-            convertedMoney = moneyConvertion.fromManat.toYen(money);
-            result = `${money} AZN = ${convertedMoney} YEN`;
+            convertedMoney = moneyConvertion.fromManat.toYen(amountValue);
+            result = `${amountValue} AZN = ${convertedMoney} YEN`;
         } else if (secondSelect == '12') {
-            convertedMoney = moneyConvertion.fromManat.toRupee(money);
-            result = `${money} AZN = ${convertedMoney} INR`;
+            convertedMoney = moneyConvertion.fromManat.toRupee(amountValue);
+            result = `${amountValue} AZN = ${convertedMoney} INR`;
         } else if (secondSelect == '13') {
-            convertedMoney = moneyConvertion.fromManat.toRuble(money);
-            result = `${money} AZN = ${convertedMoney} RUB`;
+            convertedMoney = moneyConvertion.fromManat.toRuble(amountValue);
+            result = `${amountValue} AZN = ${convertedMoney} RUB`;
         } else if (secondSelect == '14') {
-            convertedMoney = moneyConvertion.fromManat.toPeso(money);
-            result = `${money} AZN = ${convertedMoney} ARS`;
+            convertedMoney = moneyConvertion.fromManat.toPeso(amountValue);
+            result = `${amountValue} AZN = ${convertedMoney} ARS`;
         } else if (secondSelect == '15') {
-            convertedMoney = moneyConvertion.fromManat.toLire(money);
-            result = `${money} AZN = ${convertedMoney} TRY`;
+            convertedMoney = moneyConvertion.fromManat.toLire(amountValue);
+            result = `${amountValue} AZN = ${convertedMoney} TRY`;
         } else {
-            result = `${money} AZN = ${money} AZN`;
+            result = `${amountValue} AZN = ${amountValue} AZN`;
         }
     }
 
