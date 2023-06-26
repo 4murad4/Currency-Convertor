@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Convertor</h1>
+
+        <h4>Enter amount</h4>   
+        <input type="number">
+
+        <div class="item">
+            <h4>From</h4>
+            <select name="money" id="mon1">
+                <option value="1">USD - US Dollar</option>
+                <option value="2">EUR - Euro</option>
+                <option value="3">JPY - Japanese Yen</option>
+                <option value="4">INR - Indian Rupee</option>
+                <option value="5">RUB - Russian Ruble</option>
+                <option value="6">ARS - Argentina Peso</option>
+                <option value="7">TRY - Turkish Lira</option>
+                <option value="8">AZN - Azerbaijani Manat</option>
+            </select>
+        </div>
+
+        <div class="item"><=></div>
+
+        <div class="item">
+            <h4>To</h4>
+            <select name="money" id="mon2">
+                <option value="9">USD - US Dollar</option>
+                <option value="10">EUR - Euro</option>
+                <option value="11">JPY - Japanese Yen</option>
+                <option value="12">INR - Indian Rupee</option>
+                <option value="13">RUB - Russian Ruble</option>
+                <option value="14">ARS - Argentina Peso</option>
+                <option value="15">TRY - Turkish Lira</option>
+                <option value="16">AZN - Azerbaijani Manat</option>
+            </select>
+        </div>
+
+        <div class="button-item">
+            <button>Convert</button>
+        </div>
+        
+        <h1 id="result"></h1>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
